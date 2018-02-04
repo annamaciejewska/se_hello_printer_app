@@ -10,3 +10,7 @@ script:
   - make lint
   - make docker_build
   - make docker_push
+depoly:
+  provider: heroku
+  app: guarded-springs-54478
+  api_key: ${HEROKU_API_KEY}
